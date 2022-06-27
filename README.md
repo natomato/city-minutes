@@ -45,7 +45,7 @@ This is a pretty simple note-taking app, but it's a good example of how you can 
 
 This Remix Stack comes with two GitHub Actions that handle automatically deploying your app to production and staging environments.
 
-Every commit to your `main` branch will trigger a deployment to your production environment, and every commit to your `dev` branch will trigger a deployment to your staging environment.
+Every commit to your `master` branch will trigger a deployment to your production environment, and every commit to your `dev` branch will trigger a deployment to your staging environment.
 
 ### Connecting to your database
 
