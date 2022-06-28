@@ -9,8 +9,8 @@ type LoaderData = {
 
 export const loader = async () => {
   return json<LoaderData>({
-      posts: await getPosts(),
-    });
+    posts: await getPosts(),
+  });
 };
 
 
@@ -18,11 +18,11 @@ export default function Posts() {
   const {posts} = useLoaderData() as LoaderData;
   return (
     <main>
-      <h1>Posts</h1>
-      <Link to="admin" className="text-red-600 underline">
+      <h1 className="text-center">Posts</h1>
+      <Link to="admin" className="mx-3 text-red-600 underline">
         Admin
       </Link>
-      <ul>
+      <ul className="mx-3">
         {posts.map((post) => (
           <li key={post.slug}>
             <Link
