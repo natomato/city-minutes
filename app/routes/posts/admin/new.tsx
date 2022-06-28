@@ -61,7 +61,7 @@ export default function NewPost() {
         <label>
           Post Title:{" "}
           {errors?.title ? (<em className="text-red-600">{errors.title}</em>) : null}
-          <input 
+          <input
             type="text"
             name="title"
             className={inputClassName}
@@ -72,7 +72,7 @@ export default function NewPost() {
         <label>
           Post Slug:{" "}
           {errors?.slug ? (<em className="text-red-600">{errors.slug}</em>) : null}
-          <input 
+          <input
             type="text"
             name="slug"
             className={inputClassName}
